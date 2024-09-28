@@ -1,6 +1,6 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
-# # Q2-Bikroy-Web-Automation-Cypress
+# # Bikroy-Web-Automation-Cypress
 =======
 # cypress-cucumber-boilerplate-for-e2e-testing
 
