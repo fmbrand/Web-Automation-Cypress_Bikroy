@@ -21,8 +21,11 @@ class homePages {
     jobs = "//p[normalize-space()='Jobs']"
     services ="//p[normalize-space()='Services']"
     overseas = "//p[normalize-space()='Overseas Jobs']"
-
-
+    login = "//span[@class='title--1NHWk gtm-login-click']"
+    emaillogin = "//span[@class='email-text--FbASN']"
+    emailbox = "//input[@id='input_email']"
+    passwordbox = "//input[@id='input_password']"
+    loginbutton = "//button[normalize-space()='Login']"
 
 
 

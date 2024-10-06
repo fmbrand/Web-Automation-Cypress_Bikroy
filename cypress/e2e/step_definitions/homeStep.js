@@ -115,3 +115,36 @@ Given('Open Browser and Visit Website',()=> {
         // cy.xpath(locator.overseas).click()
         cy.wait(2000)
         }); 
+    When('Check that login button is present', () => {   
+        //Check mobiles text
+        cy.xpath(locator.login).should('be.visible');
+        // cy.xpath(locator.mobiles).click()
+        });
+    Then('Click on login button',  ()=> {              
+       cy.xpath(locator.login).should('be.visible')
+       cy.xpath(locator.login).click()
+       cy.wait(2000)
+      });
+    Then("Click on 'ইমেইল দিয়ে লগ ইন করুন'",  ()=> {              
+       cy.xpath(locator.emaillogin).should('be.visible')
+       cy.xpath(locator.emaillogin).click()
+       cy.wait(2000)
+      });
+    When('Enter valid email', () => {     
+       //type iphone input text
+       cy.wait(2000);
+       cy.xpath(locator.emailbox).should('be.visible')
+       cy.xpath(locator.emailbox).click()
+       cy.xpath(locator.emailbox).type('fahim1.qups@gmail.com')
+       });
+    When('Enter valid password', () => {     
+       //type iphone input text
+       cy.wait(2000);
+       cy.xpath(locator.passwordbox).should('be.visible')
+       cy.xpath(locator.passwordbox).click()
+       cy.xpath(locator.passwordbox).type('12345')
+       });
+    Then("Click login button",  ()=> {              
+        cy.xpath(locator.loginbutton).should('be.visible')
+        cy.xpath(locator.loginbutton).click()
+       });
