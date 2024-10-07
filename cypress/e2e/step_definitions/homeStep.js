@@ -148,3 +148,30 @@ Given('Open Browser and Visit Website',()=> {
         cy.xpath(locator.loginbutton).should('be.visible')
         cy.xpath(locator.loginbutton).click()
        });
+// ------------------------------------Verify that user can see mobile items--------------------
+    When('Check that browse items by category is visible', () => {   
+        cy.xpath(locator.category).should('be.visible');
+        // cy.xpath(locator.mobiles).click()
+        });
+    Then('Click on mobiles',  ()=> {              
+       cy.xpath(locator.mobilescategory).should('be.visible')
+       cy.xpath(locator.mobilescategory).click()
+       cy.wait(2000)
+      });
+    When('Search mobile model', () => {     
+       cy.wait(2000);
+       cy.xpath(locator.categorysearch_box).should('be.visible')
+       cy.xpath(locator.categorysearch_box).click()
+       cy.xpath(locator.categorysearch_box).type('Redmi Note 8')
+       });
+    Then('Click on search icon',  ()=> {              
+       cy.xpath(locator.categorysearch_button).should('be.visible')
+       cy.xpath(locator.categorysearch_button).click()
+       cy.wait(2000)
+      })
+    Then('Check that search list is visible',  ()=> { 
+       cy.wait(2000)             
+       cy.xpath(locator.categorysearch_list).should('be.visible')
+       cy.xpath(locator.categorysearch_list).and('contain.text', 'Redmi Note 8');
+       
+      })

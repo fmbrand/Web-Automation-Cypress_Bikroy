@@ -37,4 +37,10 @@ Scenario: Verify that user can see log in page
       Then Enter valid email
       Then Enter valid password
       Then Click login button
+Scenario: Verify that user can see mobile items
+      When Check that browse items by category is visible
+      Then Click on mobiles
+      Then Search mobile model
+      Then Click on search icon
+      Then Check that search list is visible
       

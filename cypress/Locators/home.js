@@ -26,8 +26,11 @@ class homePages {
     emailbox = "//input[@id='input_email']"
     passwordbox = "//input[@id='input_password']"
     loginbutton = "//button[normalize-space()='Login']"
-
-
+    category = "//h2[normalize-space()='Browse items by category']"
+    mobilescategory = "//p[normalize-space()='Mobiles']"
+    categorysearch_box = "//input[@placeholder='What are you looking for?']"
+    categorysearch_button ="//button[@type='submit']"
+    categorysearch_list = '//*[@id="app-wrapper"]/div[1]/div[3]/div/div[2]/div[3]/div[1]/div[1]/div/div/ol/li[4]/a/div'
 
 
 
