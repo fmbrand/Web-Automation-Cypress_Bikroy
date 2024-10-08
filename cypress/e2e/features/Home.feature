@@ -43,4 +43,16 @@ Scenario: Verify that user can see mobile items
       Then Search mobile model
       Then Click on search icon
       Then Check that search list is visible
+Scenario: Verify that user can see electronics items
+      When Check that browse items by category is visible
+      Then Click on electronics
+      Then Search  electronics
+      Then Click on search icon
+      Then Check that that electrinics list is visible
+Scenario: Verify that user can see vehicles items
+      When Check that browse items by category is visible
+      Then Click on vehicles
+      Then Search  vehicles
+      Then Click on search icon
+      Then Check that vehicles list is visible 
       

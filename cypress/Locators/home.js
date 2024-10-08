@@ -31,7 +31,11 @@ class homePages {
     categorysearch_box = "//input[@placeholder='What are you looking for?']"
     categorysearch_button ="//button[@type='submit']"
     categorysearch_list = '//*[@id="app-wrapper"]/div[1]/div[3]/div/div[2]/div[3]/div[1]/div[1]/div/div/ol/li[4]/a/div'
-
+    electricscategory = "//p[normalize-space()='Electronics']"
+    electricssearchlist = "//div[@class='last-link--qlz8S link-text--1Tj-x']"
+    vehiclescategory= "//p[normalize-space()='Vehicles']"
+    
+    
 
 
 

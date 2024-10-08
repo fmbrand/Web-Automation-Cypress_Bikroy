@@ -175,3 +175,49 @@ Given('Open Browser and Visit Website',()=> {
        cy.xpath(locator.categorysearch_list).and('contain.text', 'Redmi Note 8');
        
       })
+// ------------------------------------Verify that user can see electronics items--------------------
+    Then('Click on electronics',  ()=> {              
+       cy.xpath(locator.electricscategory).should('be.visible')
+       cy.xpath(locator.electricscategory).click()
+       cy.wait(2000)
+      });
+    When('Search  electronics', () => {     
+       cy.wait(2000);
+       cy.xpath(locator.categorysearch_box).should('be.visible')
+       cy.xpath(locator.categorysearch_box).click()
+       cy.xpath(locator.categorysearch_box).type('Asus vivobook s15')
+       });
+    // Then('Click on search icon',  ()=> {              
+    //    cy.xpath(locator.categorysearch_button).should('be.visible')
+    //    cy.xpath(locator.categorysearch_button).click()
+    //    cy.wait(2000)
+    //   })
+    Then('Check that that electrinics list is visible',  ()=> { 
+       cy.wait(2000)             
+       cy.xpath(locator.electricssearchlist).should('be.visible')
+       cy.xpath(locator.electricssearchlist).and('contain.text', 'Asus vivobook s15');
+       
+      })
+// ------------------------------------Verify that user can see vehicles items--------------------
+    Then('Click on vehicles',  ()=> {              
+       cy.xpath(locator.vehiclescategory).should('be.visible')
+       cy.xpath(locator.vehiclescategory).click()
+       cy.wait(2000)
+      });
+    When('Search  vehicles', () => {     
+       cy.wait(2000);
+       cy.xpath(locator.categorysearch_box).should('be.visible')
+       cy.xpath(locator.categorysearch_box).click()
+       cy.xpath(locator.categorysearch_box).type('Yamaha R15 v3')
+       });
+    // Then('Click on search icon',  ()=> {              
+    //    cy.xpath(locator.categorysearch_button).should('be.visible')
+    //    cy.xpath(locator.categorysearch_button).click()
+    //    cy.wait(2000)
+    //   })
+    Then('Check that vehicles list is visible',  ()=> { 
+       cy.wait(2000)             
+       cy.xpath(locator.electricssearchlist).should('be.visible')
+       cy.xpath(locator.electricssearchlist).and('contain.text', 'Yamaha R15 v3');
+       
+      })
