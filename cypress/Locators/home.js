@@ -34,8 +34,8 @@ class homePages {
     electricscategory = "//p[normalize-space()='Electronics']"
     electricssearchlist = "//div[@class='last-link--qlz8S link-text--1Tj-x']"
     vehiclescategory= "//p[normalize-space()='Vehicles']"
-    
-    
+    propertycategory= "//p[normalize-space()='Property']"
+    homeLivingcategory= "//p[normalize-space()='Home & Living']"
 
 
 

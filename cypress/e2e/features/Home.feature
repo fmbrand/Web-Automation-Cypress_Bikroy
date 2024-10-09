@@ -37,22 +37,33 @@ Scenario: Verify that user can see log in page
       Then Enter valid email
       Then Enter valid password
       Then Click login button
-Scenario: Verify that user can see mobile items
+# Scenario: Verify that user can see mobile items
+#       When Check that browse items by category is visible
+#       Then Click on mobiles
+#       Then Search mobile model
+#       Then Click on search icon
+#       Then Check that search list is visible
+# Scenario: Verify that user can see electronics items
+#       When Check that browse items by category is visible
+#       Then Click on electronics
+#       Then Search  electronics
+#       Then Click on search icon
+#       Then Check that that electrinics list is visible
+# Scenario: Verify that user can see vehicles items
+#       When Check that browse items by category is visible
+#       Then Click on vehicles
+#       Then Search  vehicles
+#       Then Click on search icon
+#       Then Check that vehicles list is visible 
+Scenario: Verify that user can see Propertys items
       When Check that browse items by category is visible
-      Then Click on mobiles
-      Then Search mobile model
+      Then Click on Property
+      Then Search  Property
       Then Click on search icon
-      Then Check that search list is visible
-Scenario: Verify that user can see electronics items
+      Then Check that Property list is visible 
+Scenario: Verify that user can see home & living items
       When Check that browse items by category is visible
-      Then Click on electronics
-      Then Search  electronics
+      Then Click on home & living
+      Then Search  home & living
       Then Click on search icon
-      Then Check that that electrinics list is visible
-Scenario: Verify that user can see vehicles items
-      When Check that browse items by category is visible
-      Then Click on vehicles
-      Then Search  vehicles
-      Then Click on search icon
-      Then Check that vehicles list is visible 
-      
+      Then Check that home & living list is visible

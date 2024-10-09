@@ -221,3 +221,49 @@ Given('Open Browser and Visit Website',()=> {
        cy.xpath(locator.electricssearchlist).and('contain.text', 'Yamaha R15 v3');
        
       })
+// ------------------------------------Verify that user can see Propertys items--------------------
+Then('Click on Property',  ()=> {              
+    cy.xpath(locator.propertycategory).should('be.visible')
+    cy.xpath(locator.propertycategory).click()
+    cy.wait(2000)
+   });
+ When('Search  Property', () => {     
+    cy.wait(2000);
+    cy.xpath(locator.categorysearch_box).should('be.visible')
+    cy.xpath(locator.categorysearch_box).click()
+    cy.xpath(locator.categorysearch_box).type('Yamaha R15 v3')
+    });
+ // Then('Click on search icon',  ()=> {              
+ //    cy.xpath(locator.categorysearch_button).should('be.visible')
+ //    cy.xpath(locator.categorysearch_button).click()
+ //    cy.wait(2000)
+ //   })
+ Then('Check that Property list is visible',  ()=> { 
+    cy.wait(2000)             
+    cy.xpath(locator.electricssearchlist).should('be.visible')
+    cy.xpath(locator.electricssearchlist).and('contain.text', 'Flat');
+    
+   })
+// ------------------------------------Verify that user can see Propertys items--------------------
+Then('Click on home & living',  ()=> {              
+    cy.xpath(locator.homeLivingcategory).should('be.visible')
+    cy.xpath(locator.homeLivingcategory).click()
+    cy.wait(2000)
+   });
+ When('Search  home & living', () => {     
+    cy.wait(2000);
+    cy.xpath(locator.categorysearch_box).should('be.visible')
+    cy.xpath(locator.categorysearch_box).click()
+    cy.xpath(locator.categorysearch_box).type('Yamaha R15 v3')
+    });
+ // Then('Click on search icon',  ()=> {              
+ //    cy.xpath(locator.categorysearch_button).should('be.visible')
+ //    cy.xpath(locator.categorysearch_button).click()
+ //    cy.wait(2000)
+ //   })
+ Then('Check that home & living list is visible',  ()=> { 
+    cy.wait(2000)             
+    cy.xpath(locator.electricssearchlist).should('be.visible')
+    cy.xpath(locator.electricssearchlist).and('contain.text', 'Flat');
+    
+   })
