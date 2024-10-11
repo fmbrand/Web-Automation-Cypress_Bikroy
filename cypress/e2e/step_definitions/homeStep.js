@@ -267,3 +267,27 @@ Then('Click on home & living',  ()=> {
     cy.xpath(locator.electricssearchlist).and('contain.text', 'Flat');
     
    })
+// ------------------------------------Verify that user can see Pets & Animals items--------------------
+Then('Click on Pets & Animals',  ()=> {              
+    cy.xpath(locator.petsAnimalscategory).should('be.visible')
+    cy.xpath(locator.petsAnimalscategory).click()
+    cy.wait(2000)
+   });
+ When('Search  Pets & Animals', () => {     
+    cy.wait(2000);
+    cy.xpath(locator.categorysearch_box).should('be.visible')
+    cy.xpath(locator.categorysearch_box).click()
+    cy.xpath(locator.categorysearch_box).type('Persian cat')
+    });
+ // Then('Click on search icon',  ()=> {              
+ //    cy.xpath(locator.categorysearch_button).should('be.visible')
+ //    cy.xpath(locator.categorysearch_button).click()
+ //    cy.wait(2000)
+ //   })
+ Then('Check that Pets & Animals list is visible',  ()=> { 
+    cy.wait(2000)             
+    cy.xpath(locator.electricssearchlist).should('be.visible')
+    cy.xpath(locator.electricssearchlist).and('contain.text', 'Persian cat');
+    
+   })
+

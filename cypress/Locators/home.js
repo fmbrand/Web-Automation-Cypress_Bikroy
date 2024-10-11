@@ -36,6 +36,7 @@ class homePages {
     vehiclescategory= "//p[normalize-space()='Vehicles']"
     propertycategory= "//p[normalize-space()='Property']"
     homeLivingcategory= "//p[normalize-space()='Home & Living']"
+    petsAnimalscategory= "//p[normalize-space()='Pets & Animals']"
 
 
 

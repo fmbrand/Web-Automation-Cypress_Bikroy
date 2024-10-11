@@ -5,29 +5,29 @@ Background: Open Website With Valid url
     When Check that bikroy logo is present
     
      
-# Scenario: Verify that search option is available & search anything in search box
-#     Then Click on search box
-#     When Enter text to search option
-#     Then Click on search option
-#     When Back to the previous page
+Scenario: Verify that search option is available & search anything in search box
+    Then Click on search box
+    When Enter text to search option
+    Then Click on search option
+    When Back to the previous page
 
-# Scenario: Verify that browse items by category is visible
-#       When Check that Mobiles logo is present
-#       Then Check that Electronics logo is present
-#       Then Check that Vehicles logo is present
-#       Then Check that Property logo is present
-#       Then Check that Home & Living logo is present
-#       Then Check that Pets & Animals logo is present
-#       Then Check that Mens Fashion & Grooming logo is present
-#       Then Check that Womens Fashion & Beauty logo is present
-#       Then Check that Hobbies,Sports & kids logo is present
-#       Then Check that business & industry logo is present
-#       Then Check that education logo is present
-#       Then Check that Essentials logo is present
-#       Then Check that agriculture logo is present
-#       Then Check that Jobs logo is present
-#       Then Check that Services logo is present
-#       Then Check that Overseas Jobs logo is present
+Scenario: Verify that browse items by category is visible
+      When Check that Mobiles logo is present
+      Then Check that Electronics logo is present
+      Then Check that Vehicles logo is present
+      Then Check that Property logo is present
+      Then Check that Home & Living logo is present
+      Then Check that Pets & Animals logo is present
+      Then Check that Mens Fashion & Grooming logo is present
+      Then Check that Womens Fashion & Beauty logo is present
+      Then Check that Hobbies,Sports & kids logo is present
+      Then Check that business & industry logo is present
+      Then Check that education logo is present
+      Then Check that Essentials logo is present
+      Then Check that agriculture logo is present
+      Then Check that Jobs logo is present
+      Then Check that Services logo is present
+      Then Check that Overseas Jobs logo is present
 
 
 Scenario: Verify that user can see log in page
@@ -37,24 +37,24 @@ Scenario: Verify that user can see log in page
       Then Enter valid email
       Then Enter valid password
       Then Click login button
-# Scenario: Verify that user can see mobile items
-#       When Check that browse items by category is visible
-#       Then Click on mobiles
-#       Then Search mobile model
-#       Then Click on search icon
-#       Then Check that search list is visible
-# Scenario: Verify that user can see electronics items
-#       When Check that browse items by category is visible
-#       Then Click on electronics
-#       Then Search  electronics
-#       Then Click on search icon
-#       Then Check that that electrinics list is visible
-# Scenario: Verify that user can see vehicles items
-#       When Check that browse items by category is visible
-#       Then Click on vehicles
-#       Then Search  vehicles
-#       Then Click on search icon
-#       Then Check that vehicles list is visible 
+Scenario: Verify that user can see mobile items
+      When Check that browse items by category is visible
+      Then Click on mobiles
+      Then Search mobile model
+      Then Click on search icon
+      Then Check that search list is visible
+Scenario: Verify that user can see electronics items
+      When Check that browse items by category is visible
+      Then Click on electronics
+      Then Search  electronics
+      Then Click on search icon
+      Then Check that that electrinics list is visible
+Scenario: Verify that user can see vehicles items
+      When Check that browse items by category is visible
+      Then Click on vehicles
+      Then Search  vehicles
+      Then Click on search icon
+      Then Check that vehicles list is visible 
 Scenario: Verify that user can see Propertys items
       When Check that browse items by category is visible
       Then Click on Property
@@ -67,3 +67,9 @@ Scenario: Verify that user can see home & living items
       Then Search  home & living
       Then Click on search icon
       Then Check that home & living list is visible
+Scenario: Verify that user can see Pets & Animals items
+      When Check that browse items by category is visible
+      Then Click on Pets & Animals
+      Then Search  Pets & Animals
+      Then Click on search icon
+      Then Check that Pets & Animals list is visible
