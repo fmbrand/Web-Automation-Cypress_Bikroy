@@ -37,7 +37,8 @@ class homePages {
     propertycategory= "//p[normalize-space()='Property']"
     homeLivingcategory= "//p[normalize-space()='Home & Living']"
     petsAnimalscategory= "//p[normalize-space()='Pets & Animals']"
-
+    mensFashioncategory= "//p[normalize-space()='Mens Fashion']"
+    womensFashioncategory= "//a[@href='/en/ads/bangladesh/womens-fashion']//div[@class='info--uF0qH']//p[@class='info-title--3CkVD']"
 
 
 

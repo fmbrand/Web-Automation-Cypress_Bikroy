@@ -73,3 +73,9 @@ Scenario: Verify that user can see Pets & Animals items
       Then Search  Pets & Animals
       Then Click on search icon
       Then Check that Pets & Animals list is visible
+Scenario: Verify that user can see Women's Fashion & Beauty items
+      When Check that browse items by category is visible
+      Then Click on Women's Fashion & Beauty
+      Then Search  Women's Fashion & Beauty
+      Then Click on search icon
+      Then Check that Women's Fashion & Beauty list is visible
