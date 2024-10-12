@@ -44,7 +44,7 @@ Install project dependencies with: npm i
 ##  Sample repo to generate an allure report as an artifact using GH Actions
 
 * https://github.com/SeyiOG/newCyLearn2/blob/main/.github/workflows/cypress-allure-report.yml
->>>>>>> bf5fd6a (upload)
+
 =======
 ## How to Setup and Run Cypress Tests
 
@@ -93,4 +93,4 @@ Follow these steps to upload your changes to GitHub:
     ```
 
 =======
->>>>>>> 53f9d7b5fc316a9bbcc4cd77269522ebed5ee839
+
