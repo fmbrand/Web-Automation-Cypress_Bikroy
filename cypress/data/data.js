@@ -1,6 +1,6 @@
 class data {
     
-    bikroy_url = 'https://bikroy.com/en'
+    pos_Url = 'https://pos.wenextlab.com/'
     
 
     // Time wait 
