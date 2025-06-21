@@ -1,0 +1,1 @@
+{"total":2,"items":[{"uid":"8d5605cd9bcbe1a0cbe9afdedd88709e","name":"Open Bikroy End to End","statistic":{"failed":11,"broken":0,"skipped":0,"passed":0,"unknown":0,"total":11}},{"uid":"0d863fd7e712be67599dfbffa85ad25c","name":"Open OrangeHRM End to End","statistic":{"failed":0,"broken":0,"skipped":0,"passed":20,"unknown":0,"total":20}}]}

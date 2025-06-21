@@ -19,13 +19,14 @@ async function setupNodeEvents(on, config) {
 }
 
 module.exports = defineConfig({
-  projectId: 'jd7mpk',
+  projectId: 'g1cn72',
   e2e: {
     setupNodeEvents,
     specPattern: "cypress/e2e/features//**//*.feature",
     chromeWebSecurity: false,
     viewportWidth: 1400,
     viewportHeight: 850,
+    // reporter: 'mocha', 
     env: {
       allureReuseAfterSpec: true,
       defaultCommandTimeout: 60000

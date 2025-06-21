@@ -231,7 +231,7 @@ Then('Click on Property',  ()=> {
     cy.wait(2000);
     cy.xpath(locator.categorysearch_box).should('be.visible')
     cy.xpath(locator.categorysearch_box).click()
-    cy.xpath(locator.categorysearch_box).type('Yamaha R15 v3')
+    cy.xpath(locator.categorysearch_box).type('flat')
     });
  // Then('Click on search icon',  ()=> {              
  //    cy.xpath(locator.categorysearch_button).should('be.visible')
@@ -244,7 +244,7 @@ Then('Click on Property',  ()=> {
     cy.xpath(locator.electricssearchlist).and('contain.text', 'Flat');
     
    })
-// ------------------------------------Verify that user can see Propertys items--------------------
+// ------------------------------------Verify that user can see home & living items--------------------
 Then('Click on home & living',  ()=> {              
     cy.xpath(locator.homeLivingcategory).should('be.visible')
     cy.xpath(locator.homeLivingcategory).click()
@@ -254,7 +254,7 @@ Then('Click on home & living',  ()=> {
     cy.wait(2000);
     cy.xpath(locator.categorysearch_box).should('be.visible')
     cy.xpath(locator.categorysearch_box).click()
-    cy.xpath(locator.categorysearch_box).type('Yamaha R15 v3')
+    cy.xpath(locator.categorysearch_box).type('Tea table')
     });
  // Then('Click on search icon',  ()=> {              
  //    cy.xpath(locator.categorysearch_button).should('be.visible')
@@ -264,7 +264,7 @@ Then('Click on home & living',  ()=> {
  Then('Check that home & living list is visible',  ()=> { 
     cy.wait(2000)             
     cy.xpath(locator.electricssearchlist).should('be.visible')
-    cy.xpath(locator.electricssearchlist).and('contain.text', 'Flat');
+    cy.xpath(locator.electricssearchlist).and('contain.text', 'Tea table');
     
    })
 // ------------------------------------Verify that user can see Pets & Animals items--------------------
@@ -290,17 +290,17 @@ Then('Click on Pets & Animals',  ()=> {
     cy.xpath(locator.electricssearchlist).and('contain.text', 'Persian cat');
     
    })
-// ------------------------------------Verify that user can see Pets & Animals items--------------------
+// ------------------------------------Verify that user can see Women's Fashion & Beauty items--------------------
 Then("Click on Women's Fashion & Beauty",  ()=> {              
-    cy.xpath(locator.petsAnimalscategory).should('be.visible')
-    cy.xpath(locator.petsAnimalscategory).click()
+    cy.xpath(locator.womensFashioncategory).should('be.visible')
+    cy.xpath(locator.womensFashioncategory).click()
     cy.wait(2000)
    });
  When("Search  Women's Fashion & Beauty", () => {     
     cy.wait(2000);
     cy.xpath(locator.categorysearch_box).should('be.visible')
     cy.xpath(locator.categorysearch_box).click()
-    cy.xpath(locator.categorysearch_box).type('Persian cat')
+    cy.xpath(locator.categorysearch_box).type('3 pis')
     });
  // Then('Click on search icon',  ()=> {              
  //    cy.xpath(locator.categorysearch_button).should('be.visible')
@@ -310,7 +310,7 @@ Then("Click on Women's Fashion & Beauty",  ()=> {
  Then("Check that Women's Fashion & Beauty list is visible",  ()=> { 
     cy.wait(2000)             
     cy.xpath(locator.electricssearchlist).should('be.visible')
-    cy.xpath(locator.electricssearchlist).and('contain.text', 'Persian cat');
+    cy.xpath(locator.electricssearchlist).and('contain.text', '3 pis');
     
    })
 
